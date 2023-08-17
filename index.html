@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Function</title>
+</head>
+<body>
+    <header>
+      <div><h1 class="text-3xl lg:text-5xl lg:font-semibold lg:text-center mt-5">Flower Shop</h1></div>
+    </header>
+    <main>
+      <section>
+        <div class="grid md:grid-cols-1  lg:grid-cols-4 gap-6 mt-5 ml-5">
+          <div class="card w-96 h-50 bg-base-100 shadow-xl">
+            <figure><img src="Flower Asset/flower.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">White Rose</h2>
+              <p>The red rose is a falcon, And the white rose is a dove.</p>
+              <h1>Price: 10</h1>
+              
+                <button onclick="clickBtn(this)" class="btn btn-primary">Buy Now</button>
+              
+            </div>
+          </div>
+          <div class="card w-96 h-50 bg-base-100 shadow-xl">
+            <figure><img src="Flower Asset/flower.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Pink Rose</h2>
+              <p>True love is like little pink roses, sweet, and fragrant in small doses.</p>
+              <h1>Price: 50</h1>
+             
+                <button onclick="clickBtn(this)" class="btn btn-primary">Buy Now</button>
+              
+            </div>
+          </div>
+          <div class="card w-96 h-50 bg-base-100 shadow-xl">
+            <figure><img src="Flower Asset/flower.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Black Rose</h2>
+              <p>A single black rose to help you climb</p>
+              <h1>Price: 100 </h1>
+                <button onclick="clickBtn(this)" class="btn btn-primary">Buy Now</button>
+              
+            </div>
+          </div>
+
+          <div class="text-3xl bg-red-100 p-5 w-80 ml-5">
+            <h1>Code : Hero</h1>
+            <hr>
+            <div class="selected-items" id="selected-items"></div>
+            <div class="cart-box">
+              <h6>total: <span id="total">00</span></h6>
+              <div class="coupon">
+                <h1>Coupon : <input type="text" name="" id="coupon-input" class="w-6/12"></h1>
+                <button class="px-2 py-2 bg-red-500" id="coupon-btn" onclick="couponBtn(this)">Enter</button>
+              </div>
+              <h6>discount:<span id="discount-value">00</span></h6>
+              <hr />
+              <h5>grand Total: <span id="grand-total">00</span></h5>
+            </div>
+  
+            
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+        
+         
+  
+
+      
+    
+</body>
+</html>
